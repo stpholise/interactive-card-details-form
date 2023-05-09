@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    
+<section class="lt">
+  <div class="cards-container">
+    <div class="card f-card">
+      <div class="top">
+        <div class="big-dot"></div>
+        <div class="small-dot"></div>
+      </div>
+      <div class="card-num"> 0000 0000 0000 0000</div>
+      <div class="btm">
+        <span class="chname">  Jane Appleseed</span>
+        <span class="date">00/00</span>
+      </div>
+    </div>
+
+    <div class="card b-card">
+      <div class="dark-rule"></div>
+      <div class="id-num">000</div>
+      <div class="writ"></div>
+    </div>
+  </div>
+</section>
+ 
+<section class="rt">
+  <div class="form-cont show">
+    <form action="#" class="form" id="formel">
+    
+      <div class="box hname-box">
+        <label for="hname" class="name"> Cardholder Name</label>
+        <input id="hname" type="text" placeholder="e.g. Jane Appleseed">
+        <span class="hname-err err"></span>
+      </div> 
+
+      <div class="box cnum-box">
+        <label for="cnum" class="name"> Card Number</label>
+        <input id="cnum" type="text" placeholder="  e.g. 1234 5678 9123 0000">
+        <span class="cnum-err err"></span>
+      </div>  
+
+      <div class="">
+        <div class="box btm">
+          <label for="cnum" class="name btm-flx">  
+             <span class="btm-txt">Exp. Date (MM/YY)</span> 
+            <div class="hlf">
+              <input id="mm" type="text"  placeholder="MM">
+              <input id="yy" type="text" min="2023" max="2050" placeholder="YY">
+              <span class="mm-err err"></span>
+            </div>  
+          </label>
+        
+          <label for="cvc" class="cvc-box">CVC
+            <input type="text" id="cvc" placeholder="e.g. 123">
+            <span class="cvc-err err"></span>
+          </label>
+        
+        </div>  
+        <button class="cfm" id="confirm" type="submit">Confirm</button>
+      </div>
+ 
+    </form>
+  </div>
+  <div class="ty">
+    <img src="images/icon-complete.svg" alt="completed">
+    <h1>  Thank you!</h1>
+    We've added your card details
+    <button class="cfm" id="continue" type="button"> Continue  </button>
+  
+  </div>
+</section>
+  
+
+  <!-- Completed state start -->
+
+
+ 
+  
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
